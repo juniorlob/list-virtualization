@@ -6,7 +6,7 @@
  */
 
 import { describe, it, expect, beforeEach, afterEach } from 'vitest';
-import { PerformanceMonitor } from '../../src/adapters/performance-api/PerformanceMonitor';
+import { PerformanceMonitor } from '../../src/adapters/performance-api/performance-monitor';
 import type { PerformanceMetrics } from '../../src/core/virtualization/types';
 
 describe('PerformanceMonitor Integration', () => {

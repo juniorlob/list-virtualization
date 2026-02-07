@@ -9,7 +9,7 @@
 
 import { useState, useRef, useCallback, useMemo, useEffect } from 'react';
 import { VirtualizationCalculator } from '../core/virtualization/calculator';
-import { PerformanceMonitor } from '../adapters/performance-api/PerformanceMonitor';
+import { PerformanceMonitor } from '../adapters/performance-api/performance-monitor';
 import type {
   VirtualizationOptions,
   VirtualizationResult,
@@ -98,9 +98,11 @@ export function useVirtualization(
       cancelAnimationFrame(rafIdRef.current);
     }
 
+    // Capture scrollTop value immediately before React recycles the event
+    const newScrollTop = event.currentTarget.scrollTop;
+
     // Schedule update for next animation frame
     rafIdRef.current = requestAnimationFrame(() => {
-      const newScrollTop = event.currentTarget.scrollTop;
       setScrollTop(newScrollTop);
       rafIdRef.current = null;
     });

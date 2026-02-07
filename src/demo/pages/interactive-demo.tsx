@@ -18,7 +18,7 @@ import styles from './interactive-demo.module.css';
  * Default configuration for the interactive demo
  */
 const DEFAULT_ITEM_COUNT = 5000;
-const DEFAULT_ITEM_HEIGHT = 60;
+const DEFAULT_ITEM_HEIGHT = 111;
 const DEFAULT_CONTAINER_HEIGHT = 600;
 const DEFAULT_OVERSCAN = 3;
 

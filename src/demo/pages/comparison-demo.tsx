@@ -18,7 +18,7 @@ import styles from './comparison-demo.module.css';
  * Default configuration for the comparison demo
  */
 const DEFAULT_ITEM_COUNT = 10000;
-const DEFAULT_ITEM_HEIGHT = 60;
+const DEFAULT_ITEM_HEIGHT = 111;
 const DEFAULT_CONTAINER_HEIGHT = 600;
 
 /**
