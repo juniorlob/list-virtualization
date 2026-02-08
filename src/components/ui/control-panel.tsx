@@ -10,16 +10,12 @@ import styles from './control-panel.module.css';
 export interface ControlPanelProps {
   /** Current dataset size */
   datasetSize: number;
-  /** Current item height in pixels */
-  itemHeight: number;
   /** Current overscan value */
   overscan: number;
   /** Whether to show the overscan control */
   showOverscan: boolean;
   /** Callback when dataset size changes */
   onDatasetSizeChange: (size: number) => void;
-  /** Callback when item height changes */
-  onItemHeightChange: (height: number) => void;
   /** Callback when overscan changes */
   onOverscanChange: (overscan: number) => void;
 }
@@ -75,11 +71,9 @@ const SliderControl: React.FC<SliderControlProps> = ({
  */
 export const ControlPanel: React.FC<ControlPanelProps> = ({
   datasetSize,
-  itemHeight,
   overscan,
   showOverscan,
   onDatasetSizeChange,
-  onItemHeightChange,
   onOverscanChange,
 }) => {
   return (
@@ -94,16 +88,6 @@ export const ControlPanel: React.FC<ControlPanelProps> = ({
         step={100}
         onChange={onDatasetSizeChange}
         testId="dataset-size-control"
-      />
-
-      <SliderControl
-        label="Item Height (px)"
-        value={itemHeight}
-        min={20}
-        max={200}
-        step={5}
-        onChange={onItemHeightChange}
-        testId="item-height-control"
       />
 
       {showOverscan && (

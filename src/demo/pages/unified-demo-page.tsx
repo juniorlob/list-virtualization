@@ -66,7 +66,7 @@ export interface UnifiedDemoPageProps {
 const DEFAULTS = {
   MODE: 'non-virtualized' as ListMode,
   DATASET_SIZE: 10000,
-  ITEM_HEIGHT: 50,
+  ITEM_HEIGHT: 134.5,
   OVERSCAN: 3,
 } as const;
 
@@ -390,14 +390,10 @@ export const UnifiedDemoPage: React.FC<UnifiedDemoPageProps> = ({
         <aside className={styles.leftPanel}>
           <ControlPanel
             datasetSize={state.datasetSize}
-            itemHeight={state.itemHeight}
             overscan={state.overscan}
             showOverscan={state.mode === 'virtualized'}
             onDatasetSizeChange={(size) =>
               handleConfigChange({ datasetSize: size })
-            }
-            onItemHeightChange={(height) =>
-              handleConfigChange({ itemHeight: height })
             }
             onOverscanChange={(overscan) =>
               handleConfigChange({ overscan })

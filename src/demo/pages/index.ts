@@ -3,8 +3,7 @@
  */
 
 // Export demo page components
-export { InteractiveDemo } from './interactive-demo';
-export { ComparisonDemo } from './comparison-demo';
+
 export { UnifiedDemoPage } from './unified-demo-page';
 
 // Export unified demo types

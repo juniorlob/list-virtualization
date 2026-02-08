@@ -32,7 +32,7 @@ export interface PerformanceMetrics {
 export interface DemoConfig {
   /** Number of items in the list (100 to 100,000) */
   datasetSize: number;
-  /** Height of each item in pixels (20 to 200) */
+  /** Height of each item in pixels */
   itemHeight: number;
   /** Number of items to render outside viewport (0 to 10, virtualized only) */
   overscan: number;
