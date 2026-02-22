@@ -740,12 +740,3 @@ MIT © [Your Name]
 - Built with [Vite](https://vitejs.dev/) and [React](https://reactjs.org/)
 - Tested with [Vitest](https://vitest.dev/) and [fast-check](https://github.com/dubzzz/fast-check)
 
-## Support
-
-- 📖 [Documentation](https://github.com/yourusername/virtualization-demo)
-- 🐛 [Issue Tracker](https://github.com/yourusername/virtualization-demo/issues)
-- 💬 [Discussions](https://github.com/yourusername/virtualization-demo/discussions)
-
----
-
-Made with ❤️ by the community
