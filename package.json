@@ -30,6 +30,8 @@
     "dev": "vite",
     "build": "npm run build:types && vite build",
     "build:types": "tsc -p tsconfig.lib.json",
+    "build:demo": "vite build --config vite.config.demo.ts",
+    "preview:demo": "vite preview --config vite.config.demo.ts --outDir dist-demo",
     "lint": "eslint .",
     "preview": "vite preview",
     "test": "vitest",
